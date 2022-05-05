@@ -1,0 +1,32 @@
+
+import "classpath:/fr/inria/diverse/francaTest/idl/eaop.fidl"
+import "classpath:/fr/inria/diverse/francaTest/spec/WsJsonRpcSpec.fdepl"
+
+
+define WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolClient {
+	Opposite = & fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolServer
+	IsClient = true
+	method engineAboutToStart {
+		CallSemantics = synchronous
+		IsOptional = false
+		IsNotification =  true
+	}
+	method engineStarted {
+		CallSemantics = synchronous
+		IsOptional = false
+		IsNotification =  true
+	}
+	
+}
+
+define WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolServer {
+	Opposite = & fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolClient
+	IsClient = false
+	method initialization {
+		CallSemantics = synchronous
+		IsOptional = false
+		IsNotification =  true
+	}
+	
+}
+
