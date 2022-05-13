@@ -1,5 +1,5 @@
 import "RPCSpec.fdepl"
-specification WsJsonRpcSpec extends RPCSpec{
+specification fr.inria.diverse.francaTest.WsJsonRpcSpec extends fr.inria.diverse.francaTest.RPCSpec{
 	for providers{
 		EndpointUri: String;
 		Port: Integer(optional);

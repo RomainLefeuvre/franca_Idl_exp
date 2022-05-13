@@ -3,8 +3,8 @@ import "classpath:/fr/inria/diverse/francaTest/idl/eaop.fidl"
 import "classpath:/fr/inria/diverse/francaTest/spec/WsJsonRpcSpec.fdepl"
 
 
-define WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolClient {
-	Opposite = & fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolServer
+define fr.inria.diverse.francaTest.WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.EngineAddonProtocolClient {
+	Opposite = & fr.inria.diverse.francaTest.idl.EngineAddonProtocolServer
 	IsClient = true
 	method engineAboutToStart {
 		CallSemantics = synchronous
@@ -19,8 +19,8 @@ define WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.eaop.EngineAd
 	
 }
 
-define WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolServer {
-	Opposite = & fr.inria.diverse.francaTest.idl.eaop.EngineAddonProtocolClient
+define fr.inria.diverse.francaTest.WsJsonRpcSpec for interface fr.inria.diverse.francaTest.idl.EngineAddonProtocolServer {
+	Opposite = & fr.inria.diverse.francaTest.idl.EngineAddonProtocolClient
 	IsClient = false
 	method initialization {
 		CallSemantics = synchronous

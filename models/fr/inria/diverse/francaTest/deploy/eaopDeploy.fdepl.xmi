@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fDeploy:FDModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fDeploy="http://www.franca.org/deploymodel/dsl/FDeploy">
+  <imports importURI="classpath:/fr/inria/diverse/francaTest/idl/eaop.fidl"/>
+  <imports importURI="classpath:/fr/inria/diverse/francaTest/spec/WsJsonRpcSpec.fdepl"/>
+  <deployments xsi:type="fDeploy:FDInterface">
+    <properties>
+      <items>
+        <decl href="eaopDeploy.fdepl#|2"/>
+        <value>
+          <single xsi:type="fDeploy:FDInterfaceRef">
+            <value href="eaopDeploy.fdepl#|3"/>
+          </single>
+        </value>
+      </items>
+      <items>
+        <decl href="eaopDeploy.fdepl#|4"/>
+        <value>
+          <single xsi:type="fDeploy:FDBoolean" value="true"/>
+        </value>
+      </items>
+    </properties>
+    <spec href="eaopDeploy.fdepl#|0"/>
+    <target href="eaopDeploy.fdepl#|1"/>
+    <methods>
+      <properties>
+        <items>
+          <decl href="eaopDeploy.fdepl#|6"/>
+          <value>
+            <single xsi:type="fDeploy:FDGeneric">
+              <value href="eaopDeploy.fdepl#|7"/>
+            </single>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|8"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="false"/>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|9"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="true"/>
+          </value>
+        </items>
+      </properties>
+      <target href="eaopDeploy.fdepl#|5"/>
+    </methods>
+    <methods>
+      <properties>
+        <items>
+          <decl href="eaopDeploy.fdepl#|11"/>
+          <value>
+            <single xsi:type="fDeploy:FDGeneric">
+              <value href="eaopDeploy.fdepl#|12"/>
+            </single>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|13"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="false"/>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|14"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="true"/>
+          </value>
+        </items>
+      </properties>
+      <target href="eaopDeploy.fdepl#|10"/>
+    </methods>
+  </deployments>
+  <deployments xsi:type="fDeploy:FDInterface">
+    <properties>
+      <items>
+        <decl href="eaopDeploy.fdepl#|17"/>
+        <value>
+          <single xsi:type="fDeploy:FDInterfaceRef">
+            <value href="eaopDeploy.fdepl#|18"/>
+          </single>
+        </value>
+      </items>
+      <items>
+        <decl href="eaopDeploy.fdepl#|19"/>
+        <value>
+          <single xsi:type="fDeploy:FDBoolean" value="false"/>
+        </value>
+      </items>
+    </properties>
+    <spec href="eaopDeploy.fdepl#|15"/>
+    <target href="eaopDeploy.fdepl#|16"/>
+    <methods>
+      <properties>
+        <items>
+          <decl href="eaopDeploy.fdepl#|21"/>
+          <value>
+            <single xsi:type="fDeploy:FDGeneric">
+              <value href="eaopDeploy.fdepl#|22"/>
+            </single>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|23"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="false"/>
+          </value>
+        </items>
+        <items>
+          <decl href="eaopDeploy.fdepl#|24"/>
+          <value>
+            <single xsi:type="fDeploy:FDBoolean" value="true"/>
+          </value>
+        </items>
+      </properties>
+      <target href="eaopDeploy.fdepl#|20"/>
+    </methods>
+  </deployments>
+</fDeploy:FDModel>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<franca:FModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:franca="http://core.franca.org" name="fr.inria.diverse.francaTest.idl">
+  <interfaces name="EngineAddonProtocolClient">
+    <version major="0" minor="0"/>
+    <methods name="engineAboutToStart">
+      <inArgs name="engine">
+        <type derived="//@typeCollections.0/@types.0"/>
+      </inArgs>
+    </methods>
+    <methods name="engineStarted">
+      <inArgs name="engine">
+        <type derived="//@typeCollections.0/@types.0"/>
+      </inArgs>
+    </methods>
+  </interfaces>
+  <interfaces name="EngineAddonProtocolServer">
+    <methods name="initialization"/>
+    <methods name="getState"/>
+    <methods name="getStep"/>
+    <broadcasts name="engineAboutToStart" selective="true">
+      <outArgs name="engine">
+        <type derived="//@typeCollections.0/@types.0"/>
+      </outArgs>
+    </broadcasts>
+  </interfaces>
+  <interfaces name="EngineAddonProtocol" managedInterfaces="//@interfaces.0 //@interfaces.1"/>
+  <typeCollections name="EAOP">
+    <types xsi:type="franca:FStructType" name="ExecutionEngine">
+      <elements name="engineKindName">
+        <type predefined="String"/>
+      </elements>
+      <elements name="engineName">
+        <type predefined="String"/>
+      </elements>
+    </types>
+    <types xsi:type="franca:FStructType" name="Step">
+      <elements name="mseOccurence">
+        <type derived="//@typeCollections.0/@types.2"/>
+      </elements>
+      <elements name="startingStateID">
+        <type predefined="String"/>
+      </elements>
+      <elements name="endingStateID">
+        <type predefined="String"/>
+      </elements>
+    </types>
+    <types xsi:type="franca:FStructType" name="MSEOccurence">
+      <elements name="mse">
+        <type derived="//@typeCollections.0/@types.3"/>
+      </elements>
+      <elements name="parameters">
+        <type predefined="String"/>
+      </elements>
+      <elements name="result">
+        <type predefined="String"/>
+      </elements>
+    </types>
+    <types xsi:type="franca:FStructType" name="MSE">
+      <elements name="callerEObjectURI">
+        <type predefined="String"/>
+      </elements>
+      <elements name="actionID">
+        <type predefined="String"/>
+      </elements>
+    </types>
+  </typeCollections>
+</franca:FModel>
